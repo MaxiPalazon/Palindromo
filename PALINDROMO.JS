@@ -2,7 +2,7 @@ function calcularPalindromo(dato){
    var re = /[^A-Za-z0-9]/g ;
    var minuscula = dato.toLowerCase().replace(re, '');
    var dato2 = minuscula.split('').reverse().join('');
-   if(dato2 === dato){
+   if(dato2 === minuscula){
     console.log("La palabra " + dato + " es un palindromo")
    } else{
     console.log("La palabra " + dato + " no es un palindromo")
